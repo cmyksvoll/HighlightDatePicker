@@ -1,9 +1,10 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:hdp="clr-namespace:HighlightDatePickerDemo">
+                    xmlns:hdp="clr-namespace:HighlightDatePickerDemo"
+                    xmlns:converters="clr-namespace:HighlightDatePickerDemo.Converters">
 
-    <hdp:DateIsInListConverter x:Key="DateIsInListConverter" />
-    <hdp:HighlightedDateDescriptionConverter x:Key="HighlightedDateDescriptionConverter" />
+    <converters:DateIsInListConverter x:Key="DateIsInListConverter" />
+    <converters:HighlightedDateDescriptionConverter x:Key="HighlightedDateDescriptionConverter" />
 
     <Style x:Key="CustomCalendarDayButtonStyle" TargetType="{x:Type CalendarDayButton}" BasedOn="{StaticResource {x:Type CalendarDayButton}}">
 

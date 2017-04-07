@@ -61,7 +61,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="HighlightDatePicker.cs" />
-    <Compile Include="HighlightedDateDescriptionConverter.cs" />
+    <Compile Include="Converters\HighlightedDateDescriptionConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -72,7 +72,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DateIsInListConverter.cs" />
+    <Compile Include="Converters\DateIsInListConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
