@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -28,5 +29,17 @@ namespace HighlightDatePickerDemo
             get { return (Brush)GetValue(HighlightBrushProperty); }
             set { SetValue(HighlightBrushProperty, value); }
         }
+    }
+
+    public class HighlightedDate
+    {
+        public HighlightedDate(DateTime date, string description)
+        {
+            Date = date;
+            Description = description;
+        }
+
+        public DateTime Date { get; set; }
+        public string Description { get; set; }
     }
 }

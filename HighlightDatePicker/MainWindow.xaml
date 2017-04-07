@@ -7,8 +7,11 @@
         mc:Ignorable="d" Title="HighlightDatePicker test" Height="350" Width="525" 
         x:Name="MyWindow" DataContext="{Binding ElementName=MyWindow}">
 
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                       
         <hdp:HighlightDatePicker SelectedDate="{Binding SelectedDate}" HighlightedDates="{Binding HighlightedDates}" HighlightBrush="LawnGreen" />
-    </Grid>
+        
+        <Button Click="ButtonBase_OnClick" Margin="0,10,0,0">Highlight today</Button>
+    </StackPanel>
 
 </Window>
