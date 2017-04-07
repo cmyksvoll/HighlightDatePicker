@@ -1,0 +1,14 @@
+﻿<Window x:Class="HighlightDatePickerDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hdp="clr-namespace:HighlightDatePickerDemo"
+        mc:Ignorable="d" Title="HighlightDatePicker test" Height="350" Width="525" 
+        x:Name="MyWindow" DataContext="{Binding ElementName=MyWindow}">
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <hdp:HighlightDatePicker SelectedDate="{Binding SelectedDate}" HighlightedDates="{Binding HighlightedDates}" HighlightBrush="LawnGreen" />
+    </Grid>
+
+</Window>
